@@ -5,7 +5,7 @@ A web notepad where registered users can save notes or memories in the form of t
 
 Home Page
 
-![Job recruitment portal home page](Images/Screenshot(272).png)
+![web_notepad home page](Images/Screenshot (272).png)
 
 Admin 3-FA Page
 
