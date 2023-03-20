@@ -1,0 +1,34 @@
+{% extends 'notes/base.html' %}
+
+{% block webpage_content %}
+    {% for note in notes %}
+    <article class="note-article">
+        <div class="note-metadata">
+            <h3><i class='fas fa-book' style='color:black;margin-right: 2rem'></i><a href="{% url 'note-detail' note.pk %}">{{note.title}}</a></h3>
+        </div>
+        <small class="text-muted">{{ note.date_posted | date:"F d, Y"}}</small>
+    </article>
+    {% endfor %}
+
+    <!--Paginator-->
+    {% if is_paginated %}
+    {% if page_obj.has_previous %}
+      <a class="btn btn-outline-dark mb-4" href="?page=1">First</a>
+      <a class="btn btn-outline-dark mb-4" href="?page={{page_obj.previous_page_number}}">Previous</a>
+    {% endif %}
+      
+    {% for num in page_obj.paginator.page_range %}
+      
+      {% if page_obj.number == num %}
+        <a class="btn btn-info mb-4" href="?page={{num}}">{{num}}</a>
+      {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+        <a class="btn btn-outline-dark mb-4" href="?page={{num}}">{{num}}</a>
+      {% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %}
+    <a class="btn btn-outline-dark mb-4" href="?page={{page_obj.next_page_number}}">Next</a>
+    <a class="btn btn-outline-dark mb-4" href="?page={{page_obj.paginator.num_pages}}">Last</a>
+  {% endif %}
+  {% endif %}
+{% endblock webpage_content %}
+    

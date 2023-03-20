@@ -1,0 +1,9 @@
+{% extends 'notes/base.html' %}
+
+{% block webpage_content %}
+    <section class="logout-section">
+        <h2>You have been logged out!.</h2>
+        <a href="{% url 'login' %}"><button type="button" class="btn btn-primary">Log In</button></a>
+    </section>
+{% endblock webpage_content %}
+    

@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(224, 220, 220);
+    margin-top: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*BASE.HTML NAVBAR*/
+a.text-decor{
+    color: red;
+    font-weight: 300px;
+    letter-spacing: 0.75rem;
+    font-family: "Audiowide", sans-serif;
+}
+
+.nav-link{
+    transition: 1s;
+}
+
+.nav-link:hover{
+    font-size: 1.3em;
+}
+
+/*HOME.HTML PAGE*/
+.note-article{
+    background-color: #fff;
+    margin-top: 2.7em;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    margin-left: 0.40rem;
+    margin-right: 0.40rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* NOTE_DETAIL.HTML */
+.note-content{
+    background-color: white;
+    border: 1px solid;
+    margin-top: 1rem;
+    margin-left: 0.40rem;
+    margin-right: 0.40rem;
+    padding: 0.60rem;
+    font-size: 1rem;
+    border-radius: 0.20rem;
+    color: rgb(92, 66, 66);
+}
+
+.detail_view{
+    padding-left: 0.40rem;
+}
+
+.detail_view h2{
+    margin-top: 3.4rem;
+    color: brown;
+    font-family: "Sofia", sans-serif;
+}
+
+.note-metadata a{
+    text-decoration: none;
+}
+
+#hint_id_username, #hint_id_password1{
+    display: none;
+}
+
+/*LOGIN.HTML*/
+.content-section, .form-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  /*LOGOUT.HTML*/
+  .logout-section{
+    margin-left: 1rem;
+  }
+
+  /*PROFILE.HTML*/
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+
+  .profile-section{
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
